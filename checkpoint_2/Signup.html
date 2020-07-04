@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Checkout example · Bootstrap</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Registration form</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="FullName">Full name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Valid full name is required.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mb-3">
+        <label for="email">Email <span class="text-muted"></span></label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="PhoneNumber">Phone number</label>
+        <input type="text" class="form-control" id="address" placeholder="1234" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="WhatsappNumber">Whatsapp Number, if avilable <span class="text-muted">(Optional)</span></label>
+        <input type="text" class="form-control" id="address2" placeholder="1234">
+      </div>
+
+
+      <div class="mb-4">
+        <lable for="gender-male">Male</lable>
+        <input type="radio" name="gender" choise="1" required>
+
+        <lable for="gender-female">Female</lable>
+        <input type="radio" name="gender" choise="2" required>
+
+        <lable for="gender-other">Other</lable>
+        <input type="radio" name="gender" choise="3" required>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <label for="languages">languages known</label>
+          <select class="custom-select d-block w-100" id="languages" required>
+            <option value="">Choose...</option>
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="MaritalStatus">Marital status</label>
+          <select class="custom-select d-block w-100" id="status" required>
+            <option value="">Choose...</option>
+            <option>Married</option>
+            <option>Single</option>
+          </select>
+          <div class="invalid-feedback">
+            Please provide a valid status.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="<address">address</label>
+          <input type="text" class="form-control" id="address" placeholder="" required>
+        </div>
+
+        <div class="row">
+          <h1>Professional Details</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="Skills">Skills</label>
+            <select class="custom-select d-block w-100" id="languages" required>
+              <option value="">Choose...</option>
+              <option>C</option>
+              <option>C++</option>
+              <option>Java</option>
+              <option>Python</option>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Bootstrap</option>
+              <option>JavaScaript</option>
+              <option>jQuery</option>
+              <option>React.js</option>
+            </select>
+            <label for="Level">Level</label>
+            <select class="custom-select d-block w-100" id="Level" required>
+              <option value="">Choose...</option>
+              <option>Beginner</option>
+              <option>intermediate</option>
+              <option>advance</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <h2>WORK HISTORY</h2>
+            <lable for="OrgName">Org Name :</lable>
+            <input type="text" name="first name" placeholder="" required>
+          </div>
+
+          <div class="row">
+            <p>Tenure</p>
+            <div>
+              <label for="StartingTime">Start</label>
+              <select class="custom-select d-block w-100" required>
+                <option value="">Choose...</option>
+                <option value="jan">january</option>
+                <option valure="feb">februray</option>
+                <option value="mar">march</option>
+                <option valve="apr">april</option>
+                <option value="may">may</option>
+                <option value="jun">june</option>
+                <option value="july">july</option>
+                <option value="agu">august</option>
+                <option value="sep">september</option>
+                <option value="oct">octuber</option>
+                <option value="nov">november</option>
+                <option value="dec">december</option>
+              </select>
+              <select class="custom-select d-block w-100" required>
+                <option value="">Choose..</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select>
+            </div>
+            <div>
+              <label for="EndingTime">End</label>
+              <select class="custom-select d-block w-100" required>
+                <option value="">Choose...</option>
+                <option value="jan">january</option>
+                <option valure="feb">februray</option>
+                <option value="mar">march</option>
+                <option valve="apr">april</option>
+                <option value="may">may</option>
+                <option value="jun">june</option>
+                <option value="july">july</option>
+                <option value="agu">august</option>
+                <option value="sep">september</option>
+                <option value="oct">octuber</option>
+                <option value="nov">november</option>
+                <option value="dec">december</option>
+              </select>
+              <select class="custom-select d-block w-100" required>
+                <option value="">Choose..</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="Designation">Designation</label>
+            <input type="text"  class="from-control" name="Company" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="ProjectName">Project Name</label>
+            <input type="text" class="from-control" name="" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="Description">Description</label>
+            <input type="text"  class="from-control" name="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h2>EDUCATION</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="FullName">School name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Name" required>
+            </div>
+
+          </div>
+
+          <div class="mb-3">
+            <label for="email">School Board <span class="text-muted"></span></label>
+            <input type="name" class="form-control" id="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="PhoneNumber">Standard</label>
+            <input type="text" class="form-control" id="address" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="WhatsappNumber">Result(percentage)<span class="text-muted">(Optional)</span></label>
+            <input type="number" class="form-control" id="address2" required>
+          </div>
+          <h2>SOCIAL LINK</h2>
+          <label for="FullName">Link</label>
+          <input type="text" class="form-control" id="" placeholder="github.com" required>
+          <div class="mb-3">
+            <label for="PhoneNumber">Years of experience</label>
+            <input type="text" class="form-control" id="address" required>
+          </div>
+
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2020 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+</body>
+
+</html>
